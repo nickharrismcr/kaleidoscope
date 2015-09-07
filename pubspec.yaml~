@@ -1,0 +1,13 @@
+name: kaleidoscope
+version: 1.0
+author: NJH
+description: Kaleidoscope explorer
+homepage: 
+environment:
+  sdk: '>=1.8.0 <2.0.0'
+dependencies:
+  browser: '>=0.10.0+2 <0.12.0'
+  dart_to_js_script_rewriter: '>=0.0.2 <0.0.4'
+  pixi_dart: '>=0.2.0+3 <0.4.0'
+transformers:
+- dart_to_js_script_rewriter
