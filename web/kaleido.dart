@@ -21,12 +21,9 @@ class Kaleido {
     kc++;
     id=kc;
     stage=p_stage;
-
     base_texture = p_texture;
     btex_x = base_texture.width;
     btex_y = base_texture.height;
-    print ("base texture x $btex_x y $btex_y");
-
     leaves=p_leaves;
     size=p_size;
     maxsize=window.innerWidth/1.7;
@@ -50,6 +47,7 @@ class Kaleido {
     smallkal = new DisplayObjectContainer();
 
     for (i = 0; i < leaves; i++) {
+
 
       Sprite sprite = new Sprite(texture);
       sprite.position = new Point (x, y);
@@ -131,7 +129,7 @@ class Kaleido {
 
     fullkal.hitArea=new Rectangle(0,0,window.innerWidth, window.innerHeight);
     fullkal.interactive=true;
-    fullkal.onClick.listen((event){resize();  });
+    fullkal.onClick.listen((event){ resize();  });
 
   }
   set_speedx(double speed)
